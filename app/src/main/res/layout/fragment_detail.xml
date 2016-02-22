@@ -1,0 +1,133 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollDet"
+        android:fillViewport="false">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingBottom="30dp"
+                android:paddingTop="30dp"
+                android:text="This is a Trailer"
+                android:textSize="25dp"
+                android:textColor="@color/colorAccent"
+                android:background="@color/colorPrimary"
+                android:id="@+id/name" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/details"
+                android:layout_below="@id/name"
+                android:background="#fcf532">
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="300dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_below="@id/name"
+                    android:src="@drawable/placeholder"
+                    android:id="@+id/image" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center">
+                    <TextView
+                        android:id="@+id/title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/name"
+                        android:layout_marginLeft="10dp"
+                        android:text="Name"
+                        android:layout_toRightOf="@+id/image"
+                        android:layout_gravity="center_horizontal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/userRating"
+                        android:layout_toRightOf="@+id/image"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center_horizontal"
+                        android:text="Rating"
+                        android:layout_below="@+id/title"
+                        android:layout_gravity="center" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/releaseDate"
+                        android:layout_toRightOf="@+id/image"
+                        android:gravity="center_horizontal"
+                        android:text="Releas Date"
+                        android:layout_marginLeft="10dp"
+                        android:layout_below="@+id/userRating"
+                        android:layout_gravity="center" />
+                    <ImageButton
+                        android:id="@+id/favorite_button"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_toRightOf="@+id/image"
+                        android:src="@android:drawable/btn_star_big_off"
+                        android:layout_below="@+id/releaseDate"
+                        android:background="#00ffffff"
+                        android:layout_gravity="center" />
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/trailer_button"
+                        android:padding="2dp"
+                        android:text="TRAILERS"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/favorite_button"
+                        android:clickable="true"
+                        android:layout_gravity="center" />
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp"
+                        android:text="REVIEWS"
+                        android:layout_below="@+id/plot"
+                        android:id="@+id/review_button"
+                        android:layout_alignParentRight="true"
+                        android:clickable="true"
+                        android:layout_gravity="center" />
+                </LinearLayout>
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/plot"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/details"/>
+
+        </RelativeLayout>
+    </ScrollView>
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/scrollDet">-->
+        <!--<ListView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/trailers"-->
+            <!--android:listSelector="@null"-->
+            <!--android:fastScrollAlwaysVisible="false"-->
+            <!--android:fastScrollEnabled="false"-->
+            <!--android:scrollIndicators="right"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_alignParentStart="true" />-->
+    <!--</RelativeLayout>-->
+
+</RelativeLayout>

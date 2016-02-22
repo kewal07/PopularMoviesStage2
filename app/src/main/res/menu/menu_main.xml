@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.udacity.popularmovies.MainActivity">
+    <item android:id="@+id/action_popularity"
+        android:title="Sort By Popularity"
+        />
+    <item android:id="@+id/action_vote_average"
+        android:title="Sort By Rating "
+        />
+    <item android:id="@+id/action_favorite"
+        android:title="@string/action_favorite"
+        />
+</menu>
